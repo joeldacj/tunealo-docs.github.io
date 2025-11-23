@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 <link href="assets/images/favicon.png" rel="icon" />
-<title>Tunealo | Documentación Técnica</title>
+<title>Tunealo | Documentación técnica</title>
 <meta name="description" content="Documentación técnica del Marketplace de Autopartes Tunealo">
 <meta name="author" content="Tunealo Dev Team">
 
@@ -40,8 +40,8 @@
         
         <div id="header-nav" class="collapse navbar-collapse justify-content-end">
           <ul class="navbar-nav">
-            <li><a href="#">Repositorio</a></li>
-            <li><a href="#">Soporte</a></li>
+            <li><a href="https://github.com/camlo43/marketplace" target="_blank">Repositorio</a></li>
+            <li><a href="https://github.com/camlo43/marketplace/issues" target="_blank">Soporte</a></li>
           </ul>
         </div>
       </div>
@@ -51,35 +51,35 @@
     
     <div class="IDO-navigation bg-light">
       <ul class="nav flex-column ">
-        <li class="nav-item"><a class="nav-link active" href="#intro">Visión General</a>
+        <li class="nav-item"><a class="nav-link active" href="#intro">Visión general</a>
           <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#project_scope">Alcance del Proyecto</a></li>
-            <li class="nav-item"><a class="nav-link" href="#tech_stack">Stack Tecnológico</a></li>
+            <li class="nav-item"><a class="nav-link" href="#project_scope">Alcance del proyecto</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tech_stack">Stack tecnológico</a></li>
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="#installation">Instalación</a>
           <ul class="nav flex-column">
             <li class="nav-item"><a class="nav-link" href="#prerequisites">Prerrequisitos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#setup_steps">Configuración Inicial</a></li>
+            <li class="nav-item"><a class="nav-link" href="#setup_steps">Configuración inicial</a></li>
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="#architecture">Arquitectura</a>
             <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#folder_structure">Estructura de Archivos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#database_schema">Base de Datos (MySQL)</a></li>
+            <li class="nav-item"><a class="nav-link" href="#folder_structure">Estructura de archivos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#database_schema">Base de datos (MySQL)</a></li>
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="#api_docs">Documentación API</a>
           <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#api_auth">Autenticación & Usuarios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#api_auth">Autenticación & usuarios</a></li>
             <li class="nav-item"><a class="nav-link" href="#api_products">Productos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#api_cart">Carrito & Ventas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#api_cart">Carrito & ventas</a></li>
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="#frontend">Frontend & UI</a>
              <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#components">Componentes Clave</a></li>
-            <li class="nav-item"><a class="nav-link" href="#design_system">Sistema de Diseño</a></li>
+            <li class="nav-item"><a class="nav-link" href="#components">Componentes clave</a></li>
+            <li class="nav-item"><a class="nav-link" href="#design_system">Sistema de diseño</a></li>
           </ul>
         </li>
       </ul>
@@ -96,7 +96,7 @@
             <div class="col-sm-6 col-lg-4">
                 <ul class="list-unstyled">
           <li><strong>Versión:</strong> 1.0.0</li>
-          <li><strong>Cliente:</strong> Tunealo (Antes Autozone)</li>
+          <li><strong>Cliente:</strong> Tunealo (antes Autozone)</li>
         </ul>
       </div>
       <div class="col-sm-6 col-lg-4">
@@ -112,13 +112,13 @@
         <hr class="divider">
         
         <section id="project_scope">
-          <h2>Alcance del Proyecto</h2>
+          <h2>Alcance del proyecto</h2>
           <p>El objetivo es transformar la marca Autozone en <strong>Tunealo</strong> mediante una solución tecnológica robusta. La plataforma opera bajo un modelo híbrido:</p>
           <ol>
-            <li><strong>eCommerce Directo:</strong> Comercialización del inventario propio de Tunealo.</li>
+            <li><strong>eCommerce directo:</strong> Comercialización del inventario propio de Tunealo.</li>
             <li><strong>Marketplace:</strong> Permite a vendedores independientes (terceros) registrarse, cargar inventario y vender productos, generando comisiones para la plataforma.</li>
           </ol>
-          <h4>Funcionalidades Principales</h4>
+          <h4>Funcionalidades principales</h4>
           <ul>
               <li>Interfaz visual estilo Pinterest (Grid Masonry).</li>
               <li>Sistema de gestión de usuarios (Compradores y Vendedores).</li>
@@ -131,7 +131,7 @@
         <hr class="divider">
 
         <section id="tech_stack">
-          <h2>Stack Tecnológico</h2>
+          <h2>Stack tecnológico</h2>
           <table class="table table-bordered">
             <thead>
               <tr>
@@ -152,7 +152,7 @@
                 <td>Endpoints RESTful integrados en la misma arquitectura Next.js (`src/app/api`).</td>
               </tr>
               <tr>
-                <td><strong>Base de Datos</strong></td>
+                <td><strong>Base de datos</strong></td>
                 <td>MySQL</td>
                 <td>Base de datos relacional para usuarios, productos y transacciones.</td>
               </tr>
@@ -173,7 +173,7 @@
         <hr class="divider">
         
         <section id="installation">
-          <h2>Instalación y Configuración</h2>
+          <h2>Instalación y configuración</h2>
           
           <h3 id="prerequisites" class="mt-4">Prerrequisitos</h3>
           <ul>
@@ -182,7 +182,7 @@
               <li>Git</li>
           </ul>
 
-          <h3 id="setup_steps" class="mt-4">Pasos de Configuración</h3>
+          <h3 id="setup_steps" class="mt-4">Pasos de configuración</h3>
           
           <p>1. <strong>Clonar el repositorio:</strong></p>
           <pre><code class="bash">git clone https://github.com/joeldacj/marketplace.git
@@ -191,7 +191,7 @@ cd marketplace</code></pre>
           <p>2. <strong>Instalar dependencias:</strong></p>
           <pre><code class="bash">npm install</code></pre>
 
-          <p>3. <strong>Configurar Base de Datos:</strong></p>
+          <p>3. <strong>Configurar base de datos:</strong></p>
           <p>Navegue a la carpeta <code>/DB</code> y ejecute los scripts SQL en el siguiente orden en su gestor de MySQL:</p>
           <ol>
               <li><code>create_database_and_tables.sql</code> (Crea la estructura)</li>
@@ -199,15 +199,15 @@ cd marketplace</code></pre>
               <li><code>migrate_all_products.sql</code> (Migración de datos de prueba)</li>
           </ol>
 
-          <p>4. <strong>Variables de Entorno:</strong></p>
+          <p>4. <strong>Variables de entorno:</strong></p>
           <p>Configure el archivo de conexión en <code>src/lib/db.js</code> o cree un archivo <code>.env</code> si el proyecto ha sido actualizado para usarlo. Asegúrese de que las credenciales de MySQL sean correctas.</p>
           
-          <p>5. <strong>Ejecutar Scripts de Mantenimiento (Opcional):</strong></p>
+          <p>5. <strong>Ejecutar scripts de mantenimiento (opcional):</strong></p>
           <p>Si necesita descargar imágenes de prueba o corregir el carrito:</p>
           <pre><code class="bash">node scripts/download-images.js
 node scripts/fix_cart_duplicates.js</code></pre>
 
-          <p>6. <strong>Iniciar el Servidor de Desarrollo:</strong></p>
+          <p>6. <strong>Iniciar el servidor de desarrollo:</strong></p>
           <pre><code class="bash">npm run dev</code></pre>
           <p>La aplicación estará disponible en <code>http://localhost:3000</code>.</p>
         </section>
@@ -215,7 +215,7 @@ node scripts/fix_cart_duplicates.js</code></pre>
         <hr class="divider">
         
         <section id="architecture">
-          <h2>Arquitectura del Sistema</h2>
+          <h2>Arquitectura del sistema</h2>
           
           <h3 id="folder_structure">Estructura de Archivos</h3>
           <p>El proyecto sigue la estructura estándar de Next.js App Router:</p>
@@ -236,7 +236,7 @@ node scripts/fix_cart_duplicates.js</code></pre>
 │   └── lib/                # Utilidades y conexión a BD
 └── package.json            # Dependencias y scripts npm</code></pre>
 
-          <h3 id="database_schema" class="mt-5">Esquema de Base de Datos</h3>
+          <h3 id="database_schema" class="mt-5">Esquema de base de datos</h3>
           <p>El sistema utiliza MySQL con las siguientes tablas principales (basado en <code>create_database_and_tables.sql</code>):</p>
           
           <div class="table-responsive">
@@ -328,7 +328,7 @@ node scripts/fix_cart_duplicates.js</code></pre>
              <tr>
                 <td><span class="badge badge-success">POST</span></td>
                 <td><code>/</code></td>
-                <td>Crea un nuevo producto (Solo vendedores).</td>
+                <td>Crea un nuevo producto (solo vendedores).</td>
             </tr>
             <tr>
                 <td><span class="badge badge-primary">GET</span></td>
@@ -337,10 +337,10 @@ node scripts/fix_cart_duplicates.js</code></pre>
             </tr>
           </table>
 
-          <h3 id="api_cart" class="mt-4">Carrito de Compras</h3>
+          <h3 id="api_cart" class="mt-4">Carrito de compras</h3>
           <div class="alert alert-info">Ruta Base: <code>/api/cart</code></div>
           
-           <pre><code class="javascript">// Ejemplo de Payload para POST /api/cart
+           <pre><code class="javascript">// Ejemplo de payload para POST /api/cart
 {
   "userId": 1,
   "productId": 105,
@@ -354,7 +354,7 @@ node scripts/fix_cart_duplicates.js</code></pre>
           <h2>Frontend & UI</h2>
           <p>El diseño se inspira en una interfaz tipo Pinterest, enfocada en la visualización rápida de productos.</p>
 
-          <h3 id="components">Componentes Clave</h3>
+          <h3 id="components">Componentes clave</h3>
           
           <div class="accordion" id="accordionComponents">
               <div class="card">
@@ -391,7 +391,7 @@ node scripts/fix_cart_duplicates.js</code></pre>
               </div>
           </div>
 
-          <h3 id="design_system" class="mt-5">Sistema de Diseño</h3>
+          <h3 id="design_system" class="mt-5">Sistema de diseño</h3>
           <p>Se utilizan estilos globales en <code>src/app/globals.css</code>. La paleta de colores busca modernizar la marca, alejándose de los colores tradicionales de Autozone para adoptar la identidad de Tunealo.</p>
           <ul>
               <li><strong>Grid:</strong> Diseño responsivo con CSS Grid y Flexbox.</li>
@@ -403,7 +403,7 @@ node scripts/fix_cart_duplicates.js</code></pre>
         <hr class="divider">
         
         <section id="IDO_support">
-          <h2>Soporte y Contribución</h2>
+          <h2>Soporte y contribución</h2>
           <p>Este proyecto fue desarrollado como reto para la Universidad de la Costa (CUC).</p>
           <p>Para reportar bugs o solicitar nuevas características, por favor crear un Issue en el repositorio del proyecto.</p>
         </section>
@@ -417,7 +417,7 @@ node scripts/fix_cart_duplicates.js</code></pre>
       <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
         <li><a data-toggle="tooltip" href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
       </ul>
-      <p class="text-center">Copyright &copy; 2024 <a href="#">Tunealo</a>. Todos los derechos reservados.</p>
+      <p class="text-center">Copyright &copy; 2025 <a href="#">Tunealo</a>. Todos los derechos reservados.</p>
       <p class="text-2 text-center mb-0">Desarrollado para la <a class="btn-link" target="_blank" href="#">Universidad de la Costa</a>.</p>
     </div>
   </footer>
