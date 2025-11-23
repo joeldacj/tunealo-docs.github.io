@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="assets/images/favicon.png" rel="icon" />
+<title>IDO | Documentación</title>
+<meta name="description" content="Documentación IDO">
+<meta name="author" content="Joel David Castro Jiménez">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Highlight Syntax -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/color-orange.css" />
+</head>
+
+<body data-spy="scroll" data-target=".IDO-navigation" data-offset="125">
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+      <div class="container-fluid">
+        <!-- Sidebar Toggler -->
+		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
+		
+		<!-- Logo --> 
+        <a class="logo ml-md-3" href="index.html" title="IDO docs"> <img src="assets/images/logo.png" alt="IDO docs" height="32px" width="32px"/> </a> 
+		<span class="text-2 ml-2"><b>IDO</b> <i>docs</i></span> 
+    <!-- Logo End -->
+        
+		<!-- Navbar Toggler -->
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav" style="opacity: 0;"><span></span><span></span><span></span></button>
+        
+		<div id="header-nav" class="collapse navbar-collapse justify-content-end" style="opacity: 0;">
+          <ul class="navbar-nav">
+            <li class="dropdown"> <a class="dropdown-toggle" href="javascript:void(0)"></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="javascript:void(0)"></a></li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:void(0)"></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="javascript:void(0)"></a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0)"></a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0)"></a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0)"></a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="javacript:void(0)"></a>
+                <li><a class="dropdown-item" href="javacript:void(0)"></a></li>
+              </ul>
+            </li>
+            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/portfolio?ref=HarnishDesign"></a></li>
+            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign"></a></li>
+          </ul>
+        </div>
+        <ul class="social-icons social-icons-sm ml-lg-2 mr-2" style="opacity: 0;">
+          <li class=""><a data-toggle="tooltip" href="javascript:void(0)" target="_blank" title="" data-original-title=""><i class=""></i></a></li>
+          <li class=""><a data-toggle="tooltip" href="javascript:void(0)" target="_blank" title="" data-original-title=""><i class=""></i></a></li>
+          <li class=""><a data-toggle="tooltip" href="javascript:void(0)" target="_blank" title="" data-original-title=""><i class=""></i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================ -->
+  <div id="content" role="main">
+    
+	<!-- Sidebar Navigation
+	============================ -->
+	<div class="IDO-navigation bg-light">
+      <ul class="nav flex-column ">
+        <li class="nav-item"><a class="nav-link active" href="#IDO_getting_started">Primeros pasos</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#IDO_preparing">Preparación</a></li>
+            <li class="nav-item"><a class="nav-link" href="#IDO_starting">Iniciando la <i>app</i></a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#IDO_layout">Recorrido</a>
+          <ul class="nav flex-column">
+			<li class="nav-item"><a class="nav-link" href="#IDO_side_menu">Menú lateral</a></li>
+      <li class="nav-item"><a class="nav-link" href="#IDO_sync">Sincronizar</a></li>
+      <li class="nav-item"><a class="nav-link" href="#IDO_account">Cuenta</a></li>
+      <li class="nav-item"><a class="nav-link" href="#IDO_extend_views">Extender vistas</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#IDO_logbook">Bitácora</a>
+			<ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#IDO_add_data">Añadir</a></li>
+            <li class="nav-item"><a class="nav-link" href="#IDO_view_details">Ver detalles</a></li>
+            <li class="nav-item"><a class="nav-link" href="#IDO_edit_data">Editar</a></li>
+            <li class="nav-item"><a class="nav-link" href="#IDO_filter_data">Filtrar</a></li>
+            <li class="nav-item"><a class="nav-link" href="#IDO_calendar_view">Vista calendario</a></li>
+          </ul>
+        <li class="nav-item"><a class="nav-link" href="#IDO_turbines">Turbinas</a>
+      <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#IDO_view_turbines">Ver información</a></li>
+      </ul>
+    </div>
+    
+    <!-- Docs Content
+	============================ -->
+    <div class="IDO-content">
+      <div class="container"> 
+        
+        <!-- Getting Started
+		============================ -->
+        <section id="IDO_start">
+        <h1 style="line-height: 0.5; font-weight: 700;">Documentación</h1>
+        <h2><i>App</i> informes de operación (IDO)</h2>
+		<hr>
+		<div class="row">
+			<div class="col-sm-6 col-lg-4">
+				<ul class="list-unstyled">
+          <li><strong>Versión:</strong> 1.0</li>
+          <li><strong>Autor:</strong> Joel David Castro Jiménez</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <ul class="list-unstyled">
+          <li><strong class="font-weight-700">Creado:</strong> 25 de
+            septiembre de 2023</li>
+          <li><strong>Actualizado:</strong> 28 de agosto de 2025</li>
+        </ul>
+			</div>
+		</div>
+        <p class="alert alert-info">Si no encuentra la información que requiere, póngase en contacto con el administrador de la aplicación.</p>
+        </section>
+        
+		<hr class="divider">
+		
+    <!-- Primeros pasos
+    ============================ -->
+        <section id="IDO_getting_started">
+          <h2>Primeros pasos</h2>
+          <p class="lead mb-5">Documentación de pasos previos al uso del aplicativo.</p>
+        </section>
+
+        <!-- Installation
+		============================ -->
+        <section id="IDO_preparing">
+          <h4>Preparación</h4>
+          <p class="lead">Antes de comenzar, asegúrese de cumplir con todo a continuación:</p>
+          <ul>
+            <li>Debe contar con una conexión estable a internet.</li>
+            <li>Su navegador web debe estar actualizado, preferiblemente, a la última versión estable.</li>
+            <li>Debe contar con una cuenta autorizada para el uso del aplicativo, de lo contrario, será imposible el acceso.</li>
+          </ul>
+          <p><i><b>Nota: </b>Las cuentas autorizadas son únicamente suministradas por el administrador.</i></p>
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- HTML Structure
+		============================ -->
+        <section id="IDO_starting">
+          <h4>Iniciando la <i>app</i></h4>
+          <p>El aplicativo de Informes de Operación se encuentra disponible para Termoflores y Termovalle. Identifique su enlace y haga clic en él.<br>
+          <i><b>Nota: </b>Cada aplicación tiene cuentas autorizadas diferentes, por lo que, para acceder, deberá escoger correctamente según su planta.</i></p>
+          <ul>
+            <li><a class="ml-1" target="_blank" href="https://cutt.ly/Prime-IDOTF/"><i class="fas fa-external-link-alt"></i> Informes de operación <b>Termoflores</b>.</a></li>
+            <li><a class="ml-1" target="_blank" href="https://cutt.ly/Prime-IDOTV/"><i class="fas fa-external-link-alt"></i> Informes de operación <b>Termovalle</b>.</a></li>
+          </ul>
+          
+          <p>En la siguiente ventana, seleccione <i><b>Preview App in Browser</b></i>, y la aplicación abrirá:</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/1-preview_app.png"><img class="img-fluid border" src="assets/images/step-by-step/1-preview_app.png" alt=""></a></p>
+             </div>
+          </div>
+
+          <br>
+
+          <p>A continuación, seleccione <b>Microsoft</b> e inicie sesión con la cuenta autorizada:</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/2-login_w_microsoft.png"><img class="img-fluid border" src="assets/images/step-by-step/2-login_w_microsoft.png" alt=""></a></p>
+             </div>
+          </div>
+
+          <br>
+
+          <p>Se abrirá una pestaña nueva en la que podrá visualizar la bitácora respectiva:</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/3-general_view.png"><img class="img-fluid border" src="assets/images/step-by-step/3-general_view.png" alt=""></a></p>
+             </div>
+          </div>
+
+        </section>
+
+		<hr class="divider">
+		
+		<!-- Layout
+		============================ -->
+        <section id="IDO_layout">
+          <h2>Recorrido</h2>
+          <p class="lead mb-5">Documentación de interfaz de la aplicación; recorrido y uso.</p>
+        </section>
+		
+		
+        <!-- Header
+		============================ -->
+        <section id="IDO_side_menu">
+          <h4>Menú lateral</h4>
+          <p>Al presionar las tres líneas <i class="fas fa-bars"></i> en la parte superior izquierda, podrá observar el menú extendido, en el que podrá cambiar entre las opciones disponibles (v. g. bitácora, turbinas):</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/4-side_menu.png"><img class="img-fluid border" src="assets/images/step-by-step/4-side_menu.png" alt=""></a></p>
+             </div>
+          </div>
+        </section>
+
+        <br>
+        
+        <section id="IDO_sync">
+          <h4>Sincronizar</h4>
+          <p>En la parte superior derecha, podrá encontrar el botón <i class="fas fa-sync fa-flip-horizontal"></i> para sincronizar los datos manualmente (la <i>app</i> se encarga de sincronizar los datos automáticamente, pero puede hacerlo cuando considere necesario):</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/5-sync.png"><img class="img-fluid border" src="assets/images/step-by-step/5-sync.png" alt=""></a></p>
+             </div>
+          </div>
+        </section>
+
+        <br>
+
+        <section id="IDO_account">        
+          <h4>Cuenta</h4>
+          <p>En la parte superior derecha, también podrá encontrar la opción para cerrar sesión cuando sea necesario:</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/6-account.png"><img class="img-fluid border" src="assets/images/step-by-step/6-account.png" alt=""></a></p>
+             </div>
+          </div>
+        </section>
+
+        <br>
+        
+        <section id="IDO_extend_views">
+          <h4>Extender vistas</h4>
+          <p>Si desea ver alguna columna (<b>Datos</b> o <b>Calendario</b>) de forma extendida, presione el botón para maximizar <i class="fas fa-expand-alt"></i>:</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/7-max_view_button.png"><img class="img-fluid border" src="assets/images/step-by-step/7-max_view_button.png" alt=""></a></p>
+             </div>
+          </div>
+
+          <p>Verá una interfaz como esta:</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/8-max_view.png"><img class="img-fluid border" src="assets/images/step-by-step/8-max_view.png" alt=""></a></p>
+             </div>
+          </div>
+        </section>
+		
+		<hr class="divider">
+		
+		<!-- Bitácora
+		============================ -->
+        <section id="IDO_logbook">
+          <h2>Bitácora</h2>
+          <p class="lead mb-5">Documentación de manejo de datos de bitácora.</p>
+        </section>
+        
+        <section id="IDO_add_data">
+          <h4>Añadir</h4>
+          <p>Para añadir datos, presione el botón <b>Añadir</b> situado en la columna de <b>Datos</b> o <b>Calendario</b>:</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/9-add_button.png"><img class="img-fluid border" src="assets/images/step-by-step/9-add_button.png" alt=""></a></p>
+             </div>
+          </div>
+
+          <p>En la parte lateral derecha, se desplegará un menú. A continuación, digite todos los datos necesarios (los campos marcados con un asterisco (*) son obligatorios) y presione <b>Guardar</b>:</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/10-add_form.png"><img class="img-fluid border" src="assets/images/step-by-step/10-add_form.png" alt=""></a></p>
+             </div>
+          </div>
+        </section>
+
+        <p><i><b>NOTA:</b> Solamente puede añadir valores con fecha del día anterior y del día actual.</i></p>
+      </section>
+
+          <br>
+        
+        <section id="IDO_view_details">
+          <h4>Ver detalles</h4>
+          <p>Para visualizar los detalles de los valores registrados en la bitácora, presione sobre cualquier fila que desee expandir:</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/11-view_details.png"><img class="img-fluid border" src="assets/images/step-by-step/11-view_details.png" alt=""></a></p>
+             </div>
+          </div>
+
+          <p>Se abrirá una interfaz en la que verá los datos de manera detallada y extendida:</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/12-details.png"><img class="img-fluid border" src="assets/images/step-by-step/12-details.png" alt=""></a></p>
+             </div>
+          </div>
+        </section>
+
+          <br>
+
+          <section id="IDO_edit_data">
+            <h4>Editar</h4>
+            <p>Para editar algún registro, expanda este y haga clic en <b>Editar</b>:</p>
+  
+            <div class="row">
+               <div class="col-lg-6">
+              <p><a class="popup-img" href="assets/images/step-by-step/12-edit_button.png"><img class="img-fluid border" src="assets/images/step-by-step/12-edit_button.png" alt=""></a></p>
+               </div>
+            </div>
+
+            <p>Se abrirá una interfaz en la que puede modificar la información que requiera:</p>
+
+            <div class="row">
+              <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/12-edit_data.png"><img class="img-fluid border" src="assets/images/step-by-step/12-edit_data.png" alt=""></a></p>
+              </div>
+          </div>
+  
+            <p><i><b>NOTA:</b> Solamente puede editar valores con fecha del día anterior y del día actual.</i></p>
+          </section>
+  
+            <br>
+
+        <section id="IDO_filter_data">
+          <h4>Filtrar</h4>
+          <p>A un lado del botón <b>Añadir</b> encontrará la opción para filtrar datos. Haciendo clic, se abre un menú lateral derecho como el que se observa. Ahí puede seleccionar según desee filtrar.</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/13-filter-1.png"><img class="img-fluid border" src="assets/images/step-by-step/13-filter-1.png" alt=""></a></p>
+             </div>
+          </div>
+
+          <p>Por ejemplo, filtremos por horas. Primero ingresamos la hora de inicio:</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/13-filter-2.png"><img class="img-fluid border" src="assets/images/step-by-step/13-filter-2.png" alt=""></a></p>
+             </div>
+          </div>
+
+          <p>Luego, la hora final:</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/13-filter-3.png"><img class="img-fluid border" src="assets/images/step-by-step/13-filter-3.png" alt=""></a></p>
+             </div>
+          </div>
+        </section>
+
+          <p>Establecidas las horas, presionamos <b>Hecho</b>:</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/13-filter-4.png"><img class="img-fluid border" src="assets/images/step-by-step/13-filter-4.png" alt=""></a></p>
+             </div>
+          </div>
+        </section>
+
+         <p>Filtrado se vería así:</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/13-filter-5.png"><img class="img-fluid border" src="assets/images/step-by-step/13-filter-5.png" alt=""></a></p>
+             </div>
+          </div>
+        </section>
+
+          <br>
+        
+        <section id="IDO_calendar_view">
+          <h4>Vista calendario</h4>
+          <p>En la parte derecha de la interfaz, podrá visualizar todos los registros de la bitácora organizados por días en el calendario. Puede escoger ver por día, semana o mes. Para ver todos los detalles de un dato en específico, haga clic sobre él:</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/14-calendar_view.png"><img class="img-fluid border" src="assets/images/step-by-step/14-calendar_view.png" alt=""></a></p>
+             </div>
+          </div>
+        </section>
+
+        <p>Puede expandir la vista si lo considera necesario:</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/14-calendar_view_expanded.png"><img class="img-fluid border" src="assets/images/step-by-step/14-calendar_view_expanded.png" alt=""></a></p>
+             </div>
+          </div>
+        </section>
+
+    <hr class="divider">
+    
+    <!-- Turbinas
+    ============================ -->
+        <section id="IDO_turbines">
+          <h2>Turbinas</h2>
+          <p class="lead mb-5">Documentación de visualización de información de turbinas.</p>
+        </section>
+        
+        <section id="IDO_view_turbines">
+          <h4>Ver información</h4>
+          <p>Cambiando a <b>Turbinas</b> en el menú lateral, como se explicó anteriormente, podrá visualizar el estado de las mismas y el tiempo desde el último estado.</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/15-turbines.png"><img class="img-fluid border" src="assets/images/step-by-step/15-turbines.png" alt=""></a></p>
+             </div>
+          </div>
+
+          <p>Presionando sobre cualquier turbina, podrá visualizar la información extendida:</p>
+
+          <div class="row">
+             <div class="col-lg-6">
+            <p><a class="popup-img" href="assets/images/step-by-step/15-turbines-expanded.png"><img class="img-fluid border" src="assets/images/step-by-step/15-turbines-expanded.png" alt=""></a></p>
+             </div>
+          </div>
+        </section>
+
+        <br>
+    
+      </div>
+    </div>
+  
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================ -->
+  <footer id="footer" class="section bg-dark footer-text-light">
+    <div class="container">
+      <p class="text-center">&copy; 2023 <a href="/">IDO</a>. Todos los derechos a sus respectivos dueños.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back To Top --> 
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- JavaScript
+============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Highlight JS -->
+<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
+<!-- Easing --> 
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+<!-- Magnific Popup --> 
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
