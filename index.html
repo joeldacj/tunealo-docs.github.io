@@ -1,32 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 <link href="assets/images/favicon.png" rel="icon" />
-<title>IDO | Documentación</title>
-<meta name="description" content="Documentación IDO">
-<meta name="author" content="Joel David Castro Jiménez">
+<title>Tunealo | Documentación Técnica</title>
+<meta name="description" content="Documentación técnica del Marketplace de Autopartes Tunealo">
+<meta name="author" content="Tunealo Dev Team">
 
-<!-- Stylesheet
-============================== -->
-<!-- Bootstrap -->
 <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
-<!-- Font Awesome Icon -->
 <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
-<!-- Magnific Popup -->
 <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
-<!-- Highlight Syntax -->
 <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
-<!-- Custom Stylesheet -->
 <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
-<link rel="stylesheet" type="text/css" href="assets/css/color-orange.css" />
 </head>
 
 <body data-spy="scroll" data-target=".IDO-navigation" data-offset="125">
 
-<!-- Preloader -->
 <div class="preloader">
   <div class="lds-ellipsis">
     <div></div>
@@ -35,467 +26,409 @@
     <div></div>
   </div>
 </div>
-<!-- Preloader End --> 
-
-<!-- Document Wrapper   
-=============================== -->
 <div id="main-wrapper"> 
   
-  <!-- Header
-  ============================ -->
   <header id="header" class="sticky-top"> 
-    <!-- Navbar -->
     <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
       <div class="container-fluid">
-        <!-- Sidebar Toggler -->
-		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
-		
-		<!-- Logo --> 
-        <a class="logo ml-md-3" href="index.html" title="IDO docs"> <img src="assets/images/logo.png" alt="IDO docs" height="32px" width="32px"/> </a> 
-		<span class="text-2 ml-2"><b>IDO</b> <i>docs</i></span> 
-    <!-- Logo End -->
+        <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
         
-		<!-- Navbar Toggler -->
-		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav" style="opacity: 0;"><span></span><span></span><span></span></button>
+        <a class="logo ml-md-3" href="index.html" title="Tunealo Docs"> 
+            <span class="text-2 ml-2"><b>Tunealo</b> Docs</span> 
+        </a> 
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
         
-		<div id="header-nav" class="collapse navbar-collapse justify-content-end" style="opacity: 0;">
+        <div id="header-nav" class="collapse navbar-collapse justify-content-end">
           <ul class="navbar-nav">
-            <li class="dropdown"> <a class="dropdown-toggle" href="javascript:void(0)"></a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="javascript:void(0)"></a></li>
-                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:void(0)"></a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="javascript:void(0)"></a></li>
-                    <li><a class="dropdown-item" href="javascript:void(0)"></a></li>
-                    <li><a class="dropdown-item" href="javascript:void(0)"></a></li>
-                    <li><a class="dropdown-item" href="javascript:void(0)"></a></li>
-                  </ul>
-                </li>
-                <li><a class="dropdown-item" href="javacript:void(0)"></a>
-                <li><a class="dropdown-item" href="javacript:void(0)"></a></li>
-              </ul>
-            </li>
-            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/portfolio?ref=HarnishDesign"></a></li>
-            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign"></a></li>
+            <li><a href="#">Repositorio</a></li>
+            <li><a href="#">Soporte</a></li>
           </ul>
         </div>
-        <ul class="social-icons social-icons-sm ml-lg-2 mr-2" style="opacity: 0;">
-          <li class=""><a data-toggle="tooltip" href="javascript:void(0)" target="_blank" title="" data-original-title=""><i class=""></i></a></li>
-          <li class=""><a data-toggle="tooltip" href="javascript:void(0)" target="_blank" title="" data-original-title=""><i class=""></i></a></li>
-          <li class=""><a data-toggle="tooltip" href="javascript:void(0)" target="_blank" title="" data-original-title=""><i class=""></i></a></li>
-        </ul>
       </div>
     </nav>
-    <!-- Navbar End --> 
-  </header>
-  <!-- Header End --> 
-  
-  <!-- Content
-  ============================ -->
+    </header>
   <div id="content" role="main">
     
-	<!-- Sidebar Navigation
-	============================ -->
-	<div class="IDO-navigation bg-light">
+    <div class="IDO-navigation bg-light">
       <ul class="nav flex-column ">
-        <li class="nav-item"><a class="nav-link active" href="#IDO_getting_started">Primeros pasos</a>
+        <li class="nav-item"><a class="nav-link active" href="#intro">Visión General</a>
           <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#IDO_preparing">Preparación</a></li>
-            <li class="nav-item"><a class="nav-link" href="#IDO_starting">Iniciando la <i>app</i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#project_scope">Alcance del Proyecto</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tech_stack">Stack Tecnológico</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="#IDO_layout">Recorrido</a>
+        <li class="nav-item"><a class="nav-link" href="#installation">Instalación</a>
           <ul class="nav flex-column">
-			<li class="nav-item"><a class="nav-link" href="#IDO_side_menu">Menú lateral</a></li>
-      <li class="nav-item"><a class="nav-link" href="#IDO_sync">Sincronizar</a></li>
-      <li class="nav-item"><a class="nav-link" href="#IDO_account">Cuenta</a></li>
-      <li class="nav-item"><a class="nav-link" href="#IDO_extend_views">Extender vistas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#prerequisites">Prerrequisitos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#setup_steps">Configuración Inicial</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="#IDO_logbook">Bitácora</a>
-			<ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#IDO_add_data">Añadir</a></li>
-            <li class="nav-item"><a class="nav-link" href="#IDO_view_details">Ver detalles</a></li>
-            <li class="nav-item"><a class="nav-link" href="#IDO_edit_data">Editar</a></li>
-            <li class="nav-item"><a class="nav-link" href="#IDO_filter_data">Filtrar</a></li>
-            <li class="nav-item"><a class="nav-link" href="#IDO_calendar_view">Vista calendario</a></li>
+        <li class="nav-item"><a class="nav-link" href="#architecture">Arquitectura</a>
+            <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#folder_structure">Estructura de Archivos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#database_schema">Base de Datos (MySQL)</a></li>
           </ul>
-        <li class="nav-item"><a class="nav-link" href="#IDO_turbines">Turbinas</a>
-      <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#IDO_view_turbines">Ver información</a></li>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#api_docs">Documentación API</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#api_auth">Autenticación & Usuarios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#api_products">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#api_cart">Carrito & Ventas</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#frontend">Frontend & UI</a>
+             <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#components">Componentes Clave</a></li>
+            <li class="nav-item"><a class="nav-link" href="#design_system">Sistema de Diseño</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
     
-    <!-- Docs Content
-	============================ -->
     <div class="IDO-content">
       <div class="container"> 
         
-        <!-- Getting Started
-		============================ -->
-        <section id="IDO_start">
-        <h1 style="line-height: 0.5; font-weight: 700;">Documentación</h1>
-        <h2><i>App</i> informes de operación (IDO)</h2>
-		<hr>
-		<div class="row">
-			<div class="col-sm-6 col-lg-4">
-				<ul class="list-unstyled">
-          <li><strong>Versión:</strong> 1.0</li>
-          <li><strong>Autor:</strong> Joel David Castro Jiménez</li>
+        <section id="intro">
+        <h1 style="line-height: 0.5; font-weight: 700;">Tunealo</h1>
+        <h2>Plataforma eCommerce + Marketplace</h2>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <ul class="list-unstyled">
+          <li><strong>Versión:</strong> 1.0.0</li>
+          <li><strong>Cliente:</strong> Tunealo (Antes Autozone)</li>
         </ul>
       </div>
       <div class="col-sm-6 col-lg-4">
         <ul class="list-unstyled">
-          <li><strong class="font-weight-700">Creado:</strong> 25 de
-            septiembre de 2023</li>
-          <li><strong>Actualizado:</strong> 28 de agosto de 2025</li>
+          <li><strong class="font-weight-700">Estado:</strong> Desarrollo / Beta</li>
+          <li><strong>Framework:</strong> Next.js</li>
         </ul>
-			</div>
-		</div>
-        <p class="alert alert-info">Si no encuentra la información que requiere, póngase en contacto con el administrador de la aplicación.</p>
-        </section>
-        
-		<hr class="divider">
-		
-    <!-- Primeros pasos
-    ============================ -->
-        <section id="IDO_getting_started">
-          <h2>Primeros pasos</h2>
-          <p class="lead mb-5">Documentación de pasos previos al uso del aplicativo.</p>
-        </section>
-
-        <!-- Installation
-		============================ -->
-        <section id="IDO_preparing">
-          <h4>Preparación</h4>
-          <p class="lead">Antes de comenzar, asegúrese de cumplir con todo a continuación:</p>
-          <ul>
-            <li>Debe contar con una conexión estable a internet.</li>
-            <li>Su navegador web debe estar actualizado, preferiblemente, a la última versión estable.</li>
-            <li>Debe contar con una cuenta autorizada para el uso del aplicativo, de lo contrario, será imposible el acceso.</li>
-          </ul>
-          <p><i><b>Nota: </b>Las cuentas autorizadas son únicamente suministradas por el administrador.</i></p>
-        </section>
-        
-		<hr class="divider">
-		
-        <!-- HTML Structure
-		============================ -->
-        <section id="IDO_starting">
-          <h4>Iniciando la <i>app</i></h4>
-          <p>El aplicativo de Informes de Operación se encuentra disponible para Termoflores y Termovalle. Identifique su enlace y haga clic en él.<br>
-          <i><b>Nota: </b>Cada aplicación tiene cuentas autorizadas diferentes, por lo que, para acceder, deberá escoger correctamente según su planta.</i></p>
-          <ul>
-            <li><a class="ml-1" target="_blank" href="https://cutt.ly/Prime-IDOTF/"><i class="fas fa-external-link-alt"></i> Informes de operación <b>Termoflores</b>.</a></li>
-            <li><a class="ml-1" target="_blank" href="https://cutt.ly/Prime-IDOTV/"><i class="fas fa-external-link-alt"></i> Informes de operación <b>Termovalle</b>.</a></li>
-          </ul>
-          
-          <p>En la siguiente ventana, seleccione <i><b>Preview App in Browser</b></i>, y la aplicación abrirá:</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/1-preview_app.png"><img class="img-fluid border" src="assets/images/step-by-step/1-preview_app.png" alt=""></a></p>
-             </div>
-          </div>
-
-          <br>
-
-          <p>A continuación, seleccione <b>Microsoft</b> e inicie sesión con la cuenta autorizada:</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/2-login_w_microsoft.png"><img class="img-fluid border" src="assets/images/step-by-step/2-login_w_microsoft.png" alt=""></a></p>
-             </div>
-          </div>
-
-          <br>
-
-          <p>Se abrirá una pestaña nueva en la que podrá visualizar la bitácora respectiva:</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/3-general_view.png"><img class="img-fluid border" src="assets/images/step-by-step/3-general_view.png" alt=""></a></p>
-             </div>
-          </div>
-
-        </section>
-
-		<hr class="divider">
-		
-		<!-- Layout
-		============================ -->
-        <section id="IDO_layout">
-          <h2>Recorrido</h2>
-          <p class="lead mb-5">Documentación de interfaz de la aplicación; recorrido y uso.</p>
-        </section>
-		
-		
-        <!-- Header
-		============================ -->
-        <section id="IDO_side_menu">
-          <h4>Menú lateral</h4>
-          <p>Al presionar las tres líneas <i class="fas fa-bars"></i> en la parte superior izquierda, podrá observar el menú extendido, en el que podrá cambiar entre las opciones disponibles (v. g. bitácora, turbinas):</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/4-side_menu.png"><img class="img-fluid border" src="assets/images/step-by-step/4-side_menu.png" alt=""></a></p>
-             </div>
-          </div>
-        </section>
-
-        <br>
-        
-        <section id="IDO_sync">
-          <h4>Sincronizar</h4>
-          <p>En la parte superior derecha, podrá encontrar el botón <i class="fas fa-sync fa-flip-horizontal"></i> para sincronizar los datos manualmente (la <i>app</i> se encarga de sincronizar los datos automáticamente, pero puede hacerlo cuando considere necesario):</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/5-sync.png"><img class="img-fluid border" src="assets/images/step-by-step/5-sync.png" alt=""></a></p>
-             </div>
-          </div>
-        </section>
-
-        <br>
-
-        <section id="IDO_account">        
-          <h4>Cuenta</h4>
-          <p>En la parte superior derecha, también podrá encontrar la opción para cerrar sesión cuando sea necesario:</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/6-account.png"><img class="img-fluid border" src="assets/images/step-by-step/6-account.png" alt=""></a></p>
-             </div>
-          </div>
-        </section>
-
-        <br>
-        
-        <section id="IDO_extend_views">
-          <h4>Extender vistas</h4>
-          <p>Si desea ver alguna columna (<b>Datos</b> o <b>Calendario</b>) de forma extendida, presione el botón para maximizar <i class="fas fa-expand-alt"></i>:</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/7-max_view_button.png"><img class="img-fluid border" src="assets/images/step-by-step/7-max_view_button.png" alt=""></a></p>
-             </div>
-          </div>
-
-          <p>Verá una interfaz como esta:</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/8-max_view.png"><img class="img-fluid border" src="assets/images/step-by-step/8-max_view.png" alt=""></a></p>
-             </div>
-          </div>
-        </section>
-		
-		<hr class="divider">
-		
-		<!-- Bitácora
-		============================ -->
-        <section id="IDO_logbook">
-          <h2>Bitácora</h2>
-          <p class="lead mb-5">Documentación de manejo de datos de bitácora.</p>
-        </section>
-        
-        <section id="IDO_add_data">
-          <h4>Añadir</h4>
-          <p>Para añadir datos, presione el botón <b>Añadir</b> situado en la columna de <b>Datos</b> o <b>Calendario</b>:</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/9-add_button.png"><img class="img-fluid border" src="assets/images/step-by-step/9-add_button.png" alt=""></a></p>
-             </div>
-          </div>
-
-          <p>En la parte lateral derecha, se desplegará un menú. A continuación, digite todos los datos necesarios (los campos marcados con un asterisco (*) son obligatorios) y presione <b>Guardar</b>:</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/10-add_form.png"><img class="img-fluid border" src="assets/images/step-by-step/10-add_form.png" alt=""></a></p>
-             </div>
-          </div>
-        </section>
-
-        <p><i><b>NOTA:</b> Solamente puede añadir valores con fecha del día anterior y del día actual.</i></p>
-      </section>
-
-          <br>
-        
-        <section id="IDO_view_details">
-          <h4>Ver detalles</h4>
-          <p>Para visualizar los detalles de los valores registrados en la bitácora, presione sobre cualquier fila que desee expandir:</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/11-view_details.png"><img class="img-fluid border" src="assets/images/step-by-step/11-view_details.png" alt=""></a></p>
-             </div>
-          </div>
-
-          <p>Se abrirá una interfaz en la que verá los datos de manera detallada y extendida:</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/12-details.png"><img class="img-fluid border" src="assets/images/step-by-step/12-details.png" alt=""></a></p>
-             </div>
-          </div>
-        </section>
-
-          <br>
-
-          <section id="IDO_edit_data">
-            <h4>Editar</h4>
-            <p>Para editar algún registro, expanda este y haga clic en <b>Editar</b>:</p>
-  
-            <div class="row">
-               <div class="col-lg-6">
-              <p><a class="popup-img" href="assets/images/step-by-step/12-edit_button.png"><img class="img-fluid border" src="assets/images/step-by-step/12-edit_button.png" alt=""></a></p>
-               </div>
             </div>
+        </div>
+        <p class="lead">Documentación técnica oficial para el desarrollo, despliegue y mantenimiento de la plataforma Tunealo.</p>
+        </section>
+        
+        <hr class="divider">
+        
+        <section id="project_scope">
+          <h2>Alcance del Proyecto</h2>
+          <p>El objetivo es transformar la marca Autozone en <strong>Tunealo</strong> mediante una solución tecnológica robusta. La plataforma opera bajo un modelo híbrido:</p>
+          <ol>
+            <li><strong>eCommerce Directo:</strong> Comercialización del inventario propio de Tunealo.</li>
+            <li><strong>Marketplace:</strong> Permite a vendedores independientes (terceros) registrarse, cargar inventario y vender productos, generando comisiones para la plataforma.</li>
+          </ol>
+          <h4>Funcionalidades Principales</h4>
+          <ul>
+              <li>Interfaz visual estilo Pinterest (Grid Masonry).</li>
+              <li>Sistema de gestión de usuarios (Compradores y Vendedores).</li>
+              <li>Carrito de compras con persistencia en base de datos.</li>
+              <li>Chat en tiempo real entre compradores y vendedores.</li>
+              <li>Panel de control para vendedores.</li>
+          </ul>
+        </section>
 
-            <p>Se abrirá una interfaz en la que puede modificar la información que requiera:</p>
+        <hr class="divider">
 
-            <div class="row">
-              <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/12-edit_data.png"><img class="img-fluid border" src="assets/images/step-by-step/12-edit_data.png" alt=""></a></p>
+        <section id="tech_stack">
+          <h2>Stack Tecnológico</h2>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Área</th>
+                <th>Tecnología</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Frontend</strong></td>
+                <td>Next.js (React)</td>
+                <td>Uso del App Router, Server Components y Client Components.</td>
+              </tr>
+              <tr>
+                <td><strong>Backend</strong></td>
+                <td>Node.js (Next API Routes)</td>
+                <td>Endpoints RESTful integrados en la misma arquitectura Next.js (`src/app/api`).</td>
+              </tr>
+              <tr>
+                <td><strong>Base de Datos</strong></td>
+                <td>MySQL</td>
+                <td>Base de datos relacional para usuarios, productos y transacciones.</td>
+              </tr>
+              <tr>
+                <td><strong>Estilos</strong></td>
+                <td>CSS Modules / CSS Global</td>
+                <td>Diseño responsivo y personalizado (`globals.css`, `page.module.css`).</td>
+              </tr>
+               <tr>
+                <td><strong>Autenticación</strong></td>
+                <td>JWT / Context API</td>
+                <td>Manejo de estado global con `AuthContext`.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        
+        <hr class="divider">
+        
+        <section id="installation">
+          <h2>Instalación y Configuración</h2>
+          
+          <h3 id="prerequisites" class="mt-4">Prerrequisitos</h3>
+          <ul>
+              <li>Node.js (v18 o superior)</li>
+              <li>MySQL Server (Local o Remoto)</li>
+              <li>Git</li>
+          </ul>
+
+          <h3 id="setup_steps" class="mt-4">Pasos de Configuración</h3>
+          
+          <p>1. <strong>Clonar el repositorio:</strong></p>
+          <pre><code class="bash">git clone https://github.com/joeldacj/marketplace.git
+cd marketplace</code></pre>
+
+          <p>2. <strong>Instalar dependencias:</strong></p>
+          <pre><code class="bash">npm install</code></pre>
+
+          <p>3. <strong>Configurar Base de Datos:</strong></p>
+          <p>Navegue a la carpeta <code>/DB</code> y ejecute los scripts SQL en el siguiente orden en su gestor de MySQL:</p>
+          <ol>
+              <li><code>create_database_and_tables.sql</code> (Crea la estructura)</li>
+              <li><code>add_images.sql</code> (Puebla datos iniciales de imágenes)</li>
+              <li><code>migrate_all_products.sql</code> (Migración de datos de prueba)</li>
+          </ol>
+
+          <p>4. <strong>Variables de Entorno:</strong></p>
+          <p>Configure el archivo de conexión en <code>src/lib/db.js</code> o cree un archivo <code>.env</code> si el proyecto ha sido actualizado para usarlo. Asegúrese de que las credenciales de MySQL sean correctas.</p>
+          
+          <p>5. <strong>Ejecutar Scripts de Mantenimiento (Opcional):</strong></p>
+          <p>Si necesita descargar imágenes de prueba o corregir el carrito:</p>
+          <pre><code class="bash">node scripts/download-images.js
+node scripts/fix_cart_duplicates.js</code></pre>
+
+          <p>6. <strong>Iniciar el Servidor de Desarrollo:</strong></p>
+          <pre><code class="bash">npm run dev</code></pre>
+          <p>La aplicación estará disponible en <code>http://localhost:3000</code>.</p>
+        </section>
+        
+        <hr class="divider">
+        
+        <section id="architecture">
+          <h2>Arquitectura del Sistema</h2>
+          
+          <h3 id="folder_structure">Estructura de Archivos</h3>
+          <p>El proyecto sigue la estructura estándar de Next.js App Router:</p>
+          <pre><code class="plaintext">/marketplace
+├── DB/                     # Scripts SQL para creación y migración
+├── public/                 # Assets estáticos (imágenes, svgs)
+├── scripts/                # Scripts de utilidad (JS/Python) para mantenimiento
+├── src/
+│   ├── app/                # Rutas de la aplicación (Pages & API)
+│   │   ├── api/            # Backend endpoints
+│   │   ├── cart/           # Página del carrito
+│   │   ├── login/          # Página de login
+│   │   ├── marketplace/    # Página principal de productos
+│   │   ├── product/[id]/   # Detalle de producto dinámico
+│   │   └── seller/[id]/    # Perfil público del vendedor
+│   ├── components/         # Componentes UI reutilizables (Header, ProductCard)
+│   ├── context/            # Estado global (Auth, Cart, Message)
+│   └── lib/                # Utilidades y conexión a BD
+└── package.json            # Dependencias y scripts npm</code></pre>
+
+          <h3 id="database_schema" class="mt-5">Esquema de Base de Datos</h3>
+          <p>El sistema utiliza MySQL con las siguientes tablas principales (basado en <code>create_database_and_tables.sql</code>):</p>
+          
+          <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Tabla</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>users</code></td>
+                <td>Almacena información de clientes y vendedores. Incluye campos para roles (tipo de usuario).</td>
+              </tr>
+              <tr>
+                <td><code>products</code></td>
+                <td>Inventario principal. Contiene título, descripción, precio, stock, y referencia al <code>seller_id</code>.</td>
+              </tr>
+              <tr>
+                <td><code>cart</code></td>
+                <td>Persistencia del carrito de compras por usuario. Relaciona <code>user_id</code> y <code>product_id</code>.</td>
+              </tr>
+              <tr>
+                <td><code>messages</code></td>
+                <td>Sistema de chat interno. Almacena remitente, destinatario y contenido del mensaje.</td>
+              </tr>
+               <tr>
+                <td><code>reservations</code></td>
+                <td>Manejo de órdenes o productos apartados.</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </section>
+        
+        <hr class="divider">
+        
+        <section id="api_docs">
+          <h2>Documentación API (REST)</h2>
+          <p>La API se encuentra en <code>src/app/api/</code>. A continuación se detallan los endpoints principales.</p>
+          
+          <h3 id="api_auth" class="mt-4">Autenticación & Usuarios</h3>
+          
+          <div class="alert alert-info">Ruta Base: <code>/api/users</code></div>
+
+          <table class="table table-bordered">
+            <tr>
+                <th>Método</th>
+                <th>Endpoint</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td><span class="badge badge-success">POST</span></td>
+                <td><code>/login</code></td>
+                <td>Verifica credenciales y retorna sesión de usuario.</td>
+            </tr>
+            <tr>
+                <td><span class="badge badge-success">POST</span></td>
+                <td><code>/register</code></td>
+                <td>Registra un nuevo usuario en la plataforma.</td>
+            </tr>
+            <tr>
+                <td><span class="badge badge-primary">GET</span></td>
+                <td><code>/[id]</code></td>
+                <td>Obtiene detalles de un usuario específico.</td>
+            </tr>
+             <tr>
+                <td><span class="badge badge-primary">GET</span></td>
+                <td><code>/[id]/seller</code></td>
+                <td>Obtiene información pública del perfil de vendedor.</td>
+            </tr>
+          </table>
+
+          <h3 id="api_products" class="mt-4">Productos</h3>
+          <div class="alert alert-info">Ruta Base: <code>/api/products</code></div>
+          
+           <table class="table table-bordered">
+            <tr>
+                <th>Método</th>
+                <th>Endpoint</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td><span class="badge badge-primary">GET</span></td>
+                <td><code>/</code></td>
+                <td>Obtiene el listado de todos los productos (Marketplace).</td>
+            </tr>
+             <tr>
+                <td><span class="badge badge-success">POST</span></td>
+                <td><code>/</code></td>
+                <td>Crea un nuevo producto (Solo vendedores).</td>
+            </tr>
+            <tr>
+                <td><span class="badge badge-primary">GET</span></td>
+                <td><code>/[id]</code></td>
+                <td>Obtiene detalles completos de un producto.</td>
+            </tr>
+          </table>
+
+          <h3 id="api_cart" class="mt-4">Carrito de Compras</h3>
+          <div class="alert alert-info">Ruta Base: <code>/api/cart</code></div>
+          
+           <pre><code class="javascript">// Ejemplo de Payload para POST /api/cart
+{
+  "userId": 1,
+  "productId": 105,
+  "quantity": 1
+}</code></pre>
+        </section>
+
+        <hr class="divider">
+
+        <section id="frontend">
+          <h2>Frontend & UI</h2>
+          <p>El diseño se inspira en una interfaz tipo Pinterest, enfocada en la visualización rápida de productos.</p>
+
+          <h3 id="components">Componentes Clave</h3>
+          
+          <div class="accordion" id="accordionComponents">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"> ProductCard.js </button> </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#accordionComponents">
+                  <div class="card-body">
+                    Muestra la imagen del producto, precio y título en un formato de tarjeta vertical. Maneja eventos de clic para navegar al detalle (`/product/[id]`) y botones rápidos para añadir al carrito.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0"> <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"> ChatWindow.js </button> </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordionComponents">
+                  <div class="card-body">
+                    Componente flotante o integrado que permite la comunicación en tiempo real. Utiliza `MessageContext` para gestionar el estado de los mensajes entre el comprador y el vendedor.
+                  </div>
+                </div>
+              </div>
+
+               <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0"> <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"> CheckoutForm.js </button> </h5>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordionComponents">
+                  <div class="card-body">
+                    Formulario seguro para procesar la compra. Valida los datos del usuario y la dirección de envío antes de confirmar la transacción.
+                  </div>
+                </div>
               </div>
           </div>
-  
-            <p><i><b>NOTA:</b> Solamente puede editar valores con fecha del día anterior y del día actual.</i></p>
-          </section>
-  
-            <br>
 
-        <section id="IDO_filter_data">
-          <h4>Filtrar</h4>
-          <p>A un lado del botón <b>Añadir</b> encontrará la opción para filtrar datos. Haciendo clic, se abre un menú lateral derecho como el que se observa. Ahí puede seleccionar según desee filtrar.</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/13-filter-1.png"><img class="img-fluid border" src="assets/images/step-by-step/13-filter-1.png" alt=""></a></p>
-             </div>
-          </div>
-
-          <p>Por ejemplo, filtremos por horas. Primero ingresamos la hora de inicio:</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/13-filter-2.png"><img class="img-fluid border" src="assets/images/step-by-step/13-filter-2.png" alt=""></a></p>
-             </div>
-          </div>
-
-          <p>Luego, la hora final:</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/13-filter-3.png"><img class="img-fluid border" src="assets/images/step-by-step/13-filter-3.png" alt=""></a></p>
-             </div>
-          </div>
-        </section>
-
-          <p>Establecidas las horas, presionamos <b>Hecho</b>:</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/13-filter-4.png"><img class="img-fluid border" src="assets/images/step-by-step/13-filter-4.png" alt=""></a></p>
-             </div>
-          </div>
-        </section>
-
-         <p>Filtrado se vería así:</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/13-filter-5.png"><img class="img-fluid border" src="assets/images/step-by-step/13-filter-5.png" alt=""></a></p>
-             </div>
-          </div>
-        </section>
-
-          <br>
-        
-        <section id="IDO_calendar_view">
-          <h4>Vista calendario</h4>
-          <p>En la parte derecha de la interfaz, podrá visualizar todos los registros de la bitácora organizados por días en el calendario. Puede escoger ver por día, semana o mes. Para ver todos los detalles de un dato en específico, haga clic sobre él:</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/14-calendar_view.png"><img class="img-fluid border" src="assets/images/step-by-step/14-calendar_view.png" alt=""></a></p>
-             </div>
-          </div>
-        </section>
-
-        <p>Puede expandir la vista si lo considera necesario:</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/14-calendar_view_expanded.png"><img class="img-fluid border" src="assets/images/step-by-step/14-calendar_view_expanded.png" alt=""></a></p>
-             </div>
-          </div>
-        </section>
-
-    <hr class="divider">
-    
-    <!-- Turbinas
-    ============================ -->
-        <section id="IDO_turbines">
-          <h2>Turbinas</h2>
-          <p class="lead mb-5">Documentación de visualización de información de turbinas.</p>
+          <h3 id="design_system" class="mt-5">Sistema de Diseño</h3>
+          <p>Se utilizan estilos globales en <code>src/app/globals.css</code>. La paleta de colores busca modernizar la marca, alejándose de los colores tradicionales de Autozone para adoptar la identidad de Tunealo.</p>
+          <ul>
+              <li><strong>Grid:</strong> Diseño responsivo con CSS Grid y Flexbox.</li>
+              <li><strong>Imágenes:</strong> Optimización automática mediante el componente <code>Image</code> de Next.js.</li>
+              <li><strong>Iconos:</strong> SVG importados directamente (`cart-icon.png`, `file.svg`).</li>
+          </ul>
         </section>
         
-        <section id="IDO_view_turbines">
-          <h4>Ver información</h4>
-          <p>Cambiando a <b>Turbinas</b> en el menú lateral, como se explicó anteriormente, podrá visualizar el estado de las mismas y el tiempo desde el último estado.</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/15-turbines.png"><img class="img-fluid border" src="assets/images/step-by-step/15-turbines.png" alt=""></a></p>
-             </div>
-          </div>
-
-          <p>Presionando sobre cualquier turbina, podrá visualizar la información extendida:</p>
-
-          <div class="row">
-             <div class="col-lg-6">
-            <p><a class="popup-img" href="assets/images/step-by-step/15-turbines-expanded.png"><img class="img-fluid border" src="assets/images/step-by-step/15-turbines-expanded.png" alt=""></a></p>
-             </div>
-          </div>
+        <hr class="divider">
+        
+        <section id="IDO_support">
+          <h2>Soporte y Contribución</h2>
+          <p>Este proyecto fue desarrollado como reto para la Universidad de la Costa (CUC).</p>
+          <p>Para reportar bugs o solicitar nuevas características, por favor crear un Issue en el repositorio del proyecto.</p>
         </section>
-
-        <br>
-    
+        
       </div>
     </div>
-  
+    
   </div>
-  <!-- Content end --> 
-  
-  <!-- Footer
-  ============================ -->
   <footer id="footer" class="section bg-dark footer-text-light">
     <div class="container">
-      <p class="text-center">&copy; 2023 <a href="/">IDO</a>. Todos los derechos a sus respectivos dueños.</p>
+      <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+        <li><a data-toggle="tooltip" href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
+      </ul>
+      <p class="text-center">Copyright &copy; 2024 <a href="#">Tunealo</a>. Todos los derechos reservados.</p>
+      <p class="text-2 text-center mb-0">Desarrollado para la <a class="btn-link" target="_blank" href="#">Universidad de la Costa</a>.</p>
     </div>
   </footer>
-  <!-- Footer end -->
-  
-</div>
-<!-- Document Wrapper end --> 
-
-<!-- Back To Top --> 
+  </div>
 <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
 
-<!-- JavaScript
-============================ -->
 <script src="assets/vendor/jquery/jquery.min.js"></script> 
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
-<!-- Highlight JS -->
 <script src="assets/vendor/highlight.js/highlight.min.js"></script> 
-<!-- Easing --> 
 <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
-<!-- Magnific Popup --> 
 <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
-<!-- Custom Script -->
 <script src="assets/js/theme.js"></script>
 </body>
 </html>
